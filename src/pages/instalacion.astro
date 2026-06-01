@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Manual Técnico - Instalación">
+  <h1 class="text-3xl font-extrabold text-indigo-700 mb-4">Instalación de Astro</h1>
+  <p class="mb-4">Con la terminal abierta en la carpeta de tus proyectos, ejecuta el asistente oficial de Astro:</p>
+  
+  <div class="bg-gray-900 text-green-400 p-4 rounded-md font-mono text-sm mb-6">
+    npm create astro@latest
+  </div>
+
+  <h2 class="text-2xl font-bold text-gray-900 mb-3 border-b pb-1">Pasos del Asistente</h2>
+  <ul class="list-disc list-inside space-y-2 text-gray-700">
+    <li><strong>Directory:</strong> Elige el nombre de la carpeta de tu proyecto.</li>
+    <li><strong>Template:</strong> Selecciona <code class="bg-gray-100 px-1 rounded text-red-600">Empty</code> para un inicio limpio.</li>
+    <li><strong>Dependencies:</strong> Dile que sí (<code class="text-indigo-600">Install dependencies</code>).</li>
+    <li><strong>Git:</strong> Inicializa el repositorio para control de versiones.</li>
+  </ul>
+</BaseLayout>

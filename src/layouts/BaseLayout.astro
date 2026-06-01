@@ -1,0 +1,26 @@
+---
+import Nav from '../components/Nav.astro';
+import '../styles/global.css';
+const { title } = Astro.props;
+---
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans min-h-screen flex flex-col">
+
+    <Nav />
+
+
+    <main class="flex-grow max-w-3xl mx-auto w-full p-6 my-6 bg-white shadow-sm rounded-md">
+      <slot />
+    </main>
+
+
+    <footer class="bg-gray-800 text-gray-400 text-center py-4 text-sm mt-auto">
+      &copy; 2026 - Manual Técnico desarrollado por Dilan Castro
+    </footer>
+  </body>
+</html>
